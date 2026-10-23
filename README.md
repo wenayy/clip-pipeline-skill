@@ -55,6 +55,17 @@ the clipper work." You can also load it explicitly in Claude Code:
 /clip-pipeline
 ```
 
+### Example prompts that use it
+
+- "Why is this generated clip starting mid-sentence?"
+- "Add GPU/NVENC encoding so rendering is faster on a Linux server."
+- "Dead air isn't being removed from some clips — where do I look?"
+- "Explain how we decide which moment is the best clip." *(great for interviews)*
+- "The captions desync after I change a clip's boundaries — why?"
+
+In each case Claude answers from the documented design — the 3-pass selection,
+the pacing invariants, the encode chain — instead of guessing.
+
 ## A note on the file paths
 
 `SKILL.md` references the file layout of the original implementation
